@@ -434,16 +434,18 @@ file to your Desktop.</li>
 help with this step</strong>. You should end up with a new folder called
 <strong><code>shell-lesson-data</code></strong> on your Desktop.</li>
 </ol></section><section><h2 class="section-heading" id="install-software">Install software<a class="anchor" aria-label="anchor" href="#install-software"></a></h2>
-<hr class="half-width"><p>If you do not already have the shell software installed, you will
-need to <a href="https://carpentries.github.io/workshop-template/install_instructions/#shell" class="external-link">download
-and install</a> it.</p>
+<hr class="half-width"><p>In this workshop we will use the <code>git bash</code> shell within
+Visual Studio Code. See instructions on how to install both tools on the
+dedicated workshop page.</p>
 </section><section><h2 class="section-heading" id="open-a-new-shell">Open a new shell<a class="anchor" aria-label="anchor" href="#open-a-new-shell"></a></h2>
 <hr class="half-width"><p>After installing the software</p>
-<ol start="3" style="list-style-type: decimal"><li>Open a terminal. If you’re not sure how to open a terminal on your
-operating system, see the instructions below.</li>
-<li>In the terminal type <code>cd</code> then press the
+<ol start="3" style="list-style-type: decimal"><li><p>Open the VSCode Terminal view Use <code>View</code> &gt;
+<code>Terminal</code> to open the terminal view in VSCode <img src="../fig/VSCode_open_terminal.png" alt="Open the terminal panel via `View` &gt; `Terminal`" class="figure"></p></li>
+<li><p>Open a Git Bash panel Use the <code>+</code> option in the
+terminal view to open a git bash terminal. <img src="../fig/VSCode_open_git_bash.png" alt="Open the terminal panel via `+` &gt; `Git Bash`" class="figure"></p></li>
+<li><p>In the terminal type <code>cd ~</code> then press the
 <kbd>Return</kbd> key. This step will make sure you start with your home
-folder as your working directory.</li>
+folder as your working directory.</p></li>
 </ol><p>In the lesson, you will find out how to access the data files in this
 folder.</p>
 <div id="where-to-type-commands-how-to-open-a-new-shell" class="callout">
@@ -458,14 +460,16 @@ shell</h3>
 <p>The shell is a program that enables us to send commands to the
 computer and receive output. It is also referred to as the terminal or
 command line.</p>
-<p>Some computers include a default Unix Shell program. The steps below
-describe some methods for identifying and opening a Unix Shell program
-if you already have one installed. There are also options for
-identifying and downloading a Unix Shell program, a Linux/UNIX emulator,
-or a program to access a Unix Shell on a server.</p>
-<p>If none of the options below address your circumstances, try an
-online search for: Unix shell [your computer model] [your operating
-system].</p>
+<p>Different types of shell programs exist. The default on OECD Windows
+is <code>Powershell</code>, but for compatibility with <code>git</code>
+and other Unix based tools we will use the <code>Git Bash</code> as
+default in this workshop. Note that most Unix-based shells behave very
+similar, so many commands you learn here will also apply on most
+Unix-based systems and shells. <code>Powershell</code> and other Windows
+based systems however share only a very small set of common commands. We
+recommend for shell based work to rely on Unix-based shells, here
+<code>Bash</code>, which we installed together with git as
+<code>Git Bash</code>.</p>
 </div>
 </div>
 </div>
@@ -476,7 +480,7 @@ system].</p>
   Windows
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>Computers with Windows operating systems do not automatically have a
 Unix Shell program installed. In this lesson, we encourage you to use an
@@ -492,53 +496,6 @@ command-line tool in Windows 10 and above.</p>
 <p>Please note that commands in the Windows Subsystem for Linux (WSL)
 may differ slightly from those shown in the lesson or presented in the
 workshop.</p>
-</div>
-</div>
-</div>
-</div>
-<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
-  <h4 class="accordion-header" id="headingSolution2">
-  MacOS
-  </h4>
-</button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
-<div class="accordion-body">
-<p>For a Mac computer running macOS Mojave or earlier releases, the
-default Unix Shell is Bash. For a Mac computer running macOS Catalina or
-later releases, the default Unix Shell is Zsh. Your default shell is
-available via the Terminal program within your Utilities folder.</p>
-<p>To open Terminal, try one or both of the following:</p>
-<ul><li>In Finder, select the Go menu, then select Utilities. Locate
-Terminal in the Utilities folder and open it.</li>
-<li>Use the Mac ‘Spotlight’ computer search function. Search for:
-<code>Terminal</code> and press <kbd>Return</kbd>.</li>
-</ul><p>To check if your machine is set up to use something other than Bash,
-type <code>echo $SHELL</code> in your terminal window.</p>
-<p>If your machine is set up to use something other than Bash, you can
-run it by opening a terminal and typing <code>bash</code>.</p>
-<p><a href="https://www.macworld.co.uk/feature/mac-software/how-use-terminal-on-mac-3608274/" class="external-link">How
-to Use Terminal on a Mac</a></p>
-</div>
-</div>
-</div>
-</div>
-<div id="accordionSolution3" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
-  <h4 class="accordion-header" id="headingSolution3">
-  Linux
-  </h4>
-</button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
-<div class="accordion-body">
-<p>The default Unix Shell for Linux operating systems is usually Bash.
-On most versions of Linux, it is accessible by running the <a href="https://help.gnome.org/users/gnome-terminal/stable/" class="external-link">Gnome
-Terminal</a> or <a href="https://konsole.kde.org/" class="external-link">KDE Konsole</a> or <a href="https://en.wikipedia.org/wiki/Xterm" class="external-link">xterm</a>, which can be found
-via the applications menu or the search bar. If your machine is set up
-to use something other than Bash, you can run it by opening a terminal
-and typing <code>bash</code>.</p>
 </div>
 </div>
 </div>
