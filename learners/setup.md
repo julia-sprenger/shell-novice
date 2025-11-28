@@ -13,16 +13,20 @@ You need to download some files to follow this lesson.
 
 ## Install software
 
-If you do not already have the shell software installed, you will need to
-[download and install][install_shell] it.
+In this workshop we will use the `git bash` shell within Visual Studio Code. See instructions on how to install both tools on the dedicated workshop page.
 
 ## Open a new shell
 
 After installing the software
 
-3. Open a terminal.
-  If you're not sure how to open a terminal on your operating system, see the instructions below.
-4. In the terminal type `cd` then press the <kbd>Return</kbd> key.
+3. Open the VSCode Terminal view
+  Use `View` > `Terminal` to open the terminal view in VSCode
+  ![](fig/VSCode_open_terminal.png){alt='Open the terminal panel via `View` > `Terminal`'}
+4. Open a Git Bash panel
+  Use the `+` option in the terminal view to open a git bash terminal.
+  ![](fig/VSCode_open_git_bash.png){alt='Open the terminal panel via `+` > `Git Bash`'}
+
+5. In the terminal type `cd ~` then press the <kbd>Return</kbd> key.
   This step will make sure you start with your home folder as your working directory.
 
 In the lesson, you will find out how to access the data files in this folder.
@@ -34,15 +38,7 @@ In the lesson, you will find out how to access the data files in this folder.
 The shell is a program that enables us to send commands to the computer and receive output.
 It is also referred to as the terminal or command line.
 
-Some computers include a default Unix Shell program.
-The steps below describe some methods for identifying and opening
-a Unix Shell program if you already have one installed.
-There are also options for identifying and downloading a Unix Shell program,
-a Linux/UNIX emulator, or a program to access a Unix Shell on a server.
-
-If none of the options below address your circumstances,
-try an online search for: Unix shell [your computer model] [your operating system].
-
+Different types of shell programs exist. The default on OECD Windows is `Powershell`, but for compatibility with `git` and other Unix based tools we will use the `Git Bash` as default in this workshop. Note that most Unix-based shells behave very similar, so many commands you learn here will also apply on most Unix-based systems and shells. `Powershell` and other Windows based systems however share only a very small set of common commands. We recommend for shell based work to rely on Unix-based shells, here `Bash`, which we installed together with git as `Git Bash`.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -68,48 +64,10 @@ from those shown in the lesson or presented in the workshop.
 
 ::::::::::::
 
-:::::::::::: solution
-
-### MacOS {#macos}
-
-For a Mac computer running macOS Mojave or earlier releases, the default Unix Shell is Bash.
-For a Mac computer running macOS Catalina or later releases, the default Unix Shell is Zsh.
-Your default shell is available via the Terminal program within your Utilities folder.
-
-To open Terminal, try one or both of the following:
-
-- In Finder, select the Go menu, then select Utilities.
-  Locate Terminal in the Utilities folder and open it.
-- Use the Mac 'Spotlight' computer search function.
-  Search for: `Terminal` and press <kbd>Return</kbd>.
-
-To check if your machine is set up to use something other than Bash,
-type `echo $SHELL` in your terminal window.
-
-If your machine is set up to use something other than Bash,
-you can run it by opening a terminal and typing `bash`.
-
-[How to Use Terminal on a Mac][mac-terminal]
-
-::::::::::::
-
-:::::::::::: solution
-
-### Linux {#linux}
-
-The default Unix Shell for Linux operating systems is usually Bash.
-On most versions of Linux, it is accessible by running the
-[Gnome Terminal][gnome-terminal] or [KDE Konsole][kde-konsole] or [xterm],
-which can be found via the applications menu or the search bar.
-If your machine is set up to use something other than Bash,
-you can run it by opening a terminal and typing `bash`.
-
-::::::::::::
 
 [zip-file]: data/shell-lesson-data.zip
 [install_shell]: https://carpentries.github.io/workshop-template/install_instructions/#shell
 [wsl]: https://learn.microsoft.com/en-us/windows/wsl/install
-[mac-terminal]: https://www.macworld.co.uk/feature/mac-software/how-use-terminal-on-mac-3608274/
 [gnome-terminal]: https://help.gnome.org/users/gnome-terminal/stable/
 [kde-konsole]: https://konsole.kde.org/
 [xterm]: https://en.wikipedia.org/wiki/Xterm
