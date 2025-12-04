@@ -26,6 +26,8 @@ After installing the software
   Use the `+` option in the terminal view to open a git bash terminal.
   ![](fig/VSCode_open_git_bash.png){alt='Open the terminal panel via `+` > `Git Bash`'}
 
+  Note: In cake `Git Bash` is not in your list of terminals try to open it it by typing `bash` in the current terminal.
+
 5. In the terminal type `cd ~` then press the <kbd>Return</kbd> key.
   This step will make sure you start with your home folder as your working directory.
 
